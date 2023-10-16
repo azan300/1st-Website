@@ -1,7 +1,40 @@
-/*
- * Custom CSS
- */
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-:root {
-  --bs-body-bg: var(--bs-gray-100);
+/* Navbar */
+.navbar {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+
+/* Spacing */
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    border: 1px solid #007bff;
+}
+
+.btn-secondary {
+    border: 1px solid #6c757d;
+}
+
+/* Custom Link Colors */
+a {
+    color: #6610f2;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
 }
