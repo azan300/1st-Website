@@ -1,40 +1,128 @@
-/* Custom Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* General styles and variables */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #41B3A3;
+    color: #333;
 }
 
-/* Navbar */
-.navbar {
-    background: linear-gradient(45deg, #007bff, #6610f2);
+header, section, footer {
+    background-color: #E8A87C;
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid black;
+    text-align: center;
 }
 
-/* Spacing */
-.container {
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* About section */
+#about {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-/* Button Hover Effects */
-.btn-primary:hover, .btn-secondary:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+/* Portfolio gallery */
+#portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.btn-primary {
-    border: 1px solid #007bff;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-.btn-secondary {
-    border: 1px solid #6c757d;
+table, th, td {
+    border: 2px solid #ddd;
 }
 
-/* Custom Link Colors */
-a {
-    color: #6610f2;
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
-a:hover {
-    color: #007bff;
-    text-decoration: underline;
+/* Photoshop images */
+#photoshop-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.before-title, .after-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.before-image, .after-image {
+    width: 250px;
+    height: auto;
+    margin: 10px 0;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+}
+
+form button {
+    background-color: #333;
+    color: #E8A87C;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    #photoshop-images {
+        flex-direction: column;
+    }
 }
