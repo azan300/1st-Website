@@ -1,57 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                More
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Blog</a></li>
-                <li><a class="dropdown-item" href="#">Contact</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Other Links</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+</head>
+
+<body>
+
+    <header>
+        <h1>Andres' Portfolio</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Andres Sandoval, I am a triplet and I grew up in Kingwood!</p>
+        <p>Growing up I ran Cross Country and enjoyed camping and fishing!</p>
+        <p>I joined the U.S. Army in 2017 and now I am getting ready to go to Drill Sgt School to become a Drill SGT!</p>
+        <p>I enjoy reading books so I have added a few of my favorite books!</p>
+    </section>
+
+    <section id="portfolio-gallery">
+        <h2>My Favorite Books</h2>
+        <table>
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Publication Year</th>
+            </tr>
+            <tr>
+                <td>Tale Of Despereaux</td>
+                <td>Kate DiCamillo</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>Ishmael</td>
+                <td>Daniel Quinn</td>
+                <td>1992</td>
+            </tr>
+            <tr>
+                <td>Ender's Game</td>
+                <td>Orson Scott Card</td>
+                <td>1985</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Cool Random Picture I enjoyed">
+        <h2>Image:</h2>
+        <div class="image-container">
+            <p class="picture">Before</p>
+            <img class="picture1" src="LinkedIn cover Picture.jpg" alt="Before image">
         </div>
-      </div>
-    </nav>
+    </section>
 
-    <div class="container my-5">
-      <h1>Welcome to My Portfolio!</h1>
-      <img src="picture1.jpg" alt="A descriptive text" class="img-fluid rounded mx-auto d-block mb-4">
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">Hello! I'm Andres Sandoval, a passionate network administrator with a desire in learning more about the world of I.T. This website showcases some of my works and a bit about my journey.</p>
-        <p>Feel free to explore and reach out if you'd like to have a conversation!</p>
-      </div>
-    </div>
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" name="name" placeholder="Name">
+
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" name="email" placeholder="Email" required>
+
+            <label for="message-textarea">Your Message:</label>
+            <textarea id="message-textarea" name="message" placeholder="Your Message"></textarea>
+
+            <label for="inquiry-select">Other:</label>
+            <select id="inquiry-select" name="inquiry">
+                <option value="inquiry">Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label for="updates-checkbox">Receive Updates:</label>
+            <input type="checkbox" id="updates-checkbox" name="updates">
+
+            <p>Contact Method:<p>
+                <label for="contact-email">Email:</label>
+                <input type="radio" id="contact-email" name="contactMethod" value="email">
+
+                <label for="contact-phone">Phone:</label>
+                <input type="radio" id="contact-phone" name="contactMethod" value="phone">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2023 Andres Sandoval. All Rights Reserved.
+    </footer>
+  
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
